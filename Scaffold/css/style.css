@@ -1,0 +1,402 @@
+/*--------------------------------------------------------------
+# Font-Face
+--------------------------------------------------------------*/
+@font-face {
+    font-family: navfont;
+    src: url("../fonts/Poppins-Regular.ttf");
+  }
+  @font-face {
+    font-family: face;
+    src: url(../fonts/Raleway-Bold.ttf);
+  }
+  @font-face {
+    font-family: heading2;
+    src: url("../fonts/Raleway-Regular.ttf");
+  }
+  .heading2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    font-family: "Poppins", sans-serif;
+    color: #627680;
+  }
+  /*--------------------------------------------------------------
+  # Navbar
+  --------------------------------------------------------------*/
+  #navbarNav .navbar-nav .nav-item .nav-link i {
+    font-size: 22px;
+    color: #7b909a;
+  }
+  #navbarNav .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    margin-left: 4px;
+    font-weight: 400;
+    line-height: 23px;
+    font-family: navfont;
+  }
+  #navbarNav .navbar-nav .nav-item .nav-link:hover {
+    color: #5abff3;
+  }
+  #navbarNav .navbar-nav .nav-item .nav-link i:hover {
+    color: #5abff3;
+  }
+  /*--------------------------------------------------------------
+  # Font-Face
+  --------------------------------------------------------------*/
+  h1 {
+    font-family: face;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 60px;
+  }
+  
+  h2 {
+    font-family: heading2;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 3px;
+    color: #fff;
+    background: #009cea;
+  }
+  
+  /*--------------------------------------------------------------
+  # Learn-More Section
+  --------------------------------------------------------------*/
+  
+  .fs-italic {
+    font-style: italic !important;
+  }
+  .Designsection {
+    margin: 75px 0px;
+  }
+  
+  h3 {
+    font-weight: 400;
+    font-size: 32px;
+    color: #364146;
+    font-family: "Poppins", sans-serif;
+  }
+  /*Services -Section*/
+  .services {
+    background-color: #f7f8f9;
+  }
+  
+  .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgb(68 88 144 / 10%);
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+  }
+  .icon-box-pink .icon i {
+    color: #ff689b;
+    font-size: 50px;
+  }
+  .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .title a {
+    text-decoration: none;
+    color: #111;
+  }
+  .services.description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  .services .icon-box-pink:hover {
+    border-color: #ff689b;
+  }
+  .services .icon-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .icon-box-cyan .icon i {
+    color: #3fcdc7;
+    font-size: 50px;
+  }
+  .services .icon-box-cyan:hover {
+    border-color: #3fcdc7;
+  }
+  .services .icon-box-pink:hover {
+    border-color: #ff689b;
+  }
+  
+  .icon-box-green .icon i {
+    color: #41cf2e;
+    font-size: 50px;
+  }
+  .services .icon-box-green:hover {
+    border-color: #41cf2e;
+  }
+  
+  .icon-box-blue .icon i {
+    color: #2282ff;
+    font-size: 50px;
+  }
+  .services .icon-box-blue:hover {
+    border-color: #2282ff;
+  }
+  
+  /*Portfolio-section*/
+  #Portfolio-list {
+    padding: 0;
+    list-style: none;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  #Portfolio-list li {
+    cursor: pointer;
+    padding-left: 12px;
+  }
+  #Portfolio-list .active {
+    color: #2282ff;
+  }
+  @media screen and (min-width: 367px) {
+    .abnn {
+      padding-top: 20px;
+    }
+  }
+  /*-----------------------
+      Image-Hover
+  ------------------------*/
+  
+  .img_hover_1 {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .img_hover_1 img {
+    transition: all 500ms ease;
+  }
+  .img_hover_1:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  .img_hover_1:hover:before {
+    -webkit-animation: circle 0.95s;
+    animation: circle 0.95s;
+  }
+  @keyframes circle {
+    0% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      width: 200%;
+      height: 200%;
+      opacity: 0;
+    }
+  }
+  /*call-section*/
+  .callsection {
+    background-image: url("../Image/Untitled-1_02.png");
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  .btn1 {
+    padding: 10px 40px;
+    background: #009cea;
+    color: white;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  /*Team-Section*/
+  .teamsection {
+    background-image: url("../Image/team-bg.jpg");
+    height: 100vh;
+    background-size: auto;
+    background-size: cover;
+  
+    position: relative;
+  }
+  .teamsection::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 9;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    font-family: "Poppins", sans-serif;
+    color: #627680;
+  }
+  /*client-section*/
+  .client-section .logosection img {
+    max-width: 50%;
+    filter: grayscale(100);
+  }
+  .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #eceff0;
+    border-bottom: 1px solid #eceff0;
+    overflow: hidden;
+    background: #fff;
+    height: 120px;
+    padding: 40px;
+  }
+  .client-logo img {
+    max-width: 50%;
+    filter: grayscale(100);
+  }
+  .client-logo:hover img {
+    filter: none;
+    transform: scale(1.1);
+  }
+  .client-logo img {
+    transition: all 0.4s ease-in-out;
+  }
+  /*Frequent-Section-Start*/
+  .icon {
+    padding-right: 8px;
+  }
+  .icon:hover {
+    color: #0c65e5;
+  }
+  /*Footer*/
+  footer p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #576971;
+  }
+  footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #e9ecee;
+    color: #8a9ca5;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  footer .social-links a:hover {
+    color: #009cea;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #364146;
+    padding-bottom: 12px;
+  }
+  footer .footerlist li {
+    list-style-type: none;
+  }
+  .footerlist {
+    padding-left: 0;
+  }
+  footer .footerlist li .footericon {
+    padding-right: 2px;
+    color: #009cea;
+    font-size: 10px;
+  }
+  footer .footerlist li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  footer .footerlist li a {
+    text-decoration: none;
+    color: #8a9ca5;
+  }
+  footer .footerlist .footericon {
+    color: blue;
+    font-size: 6px;
+  }
+  form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #e3e7e9;
+  }
+  input[type="email"] {
+    border: 1px;
+    padding: 4px;
+    width: calc(100% - 110px);
+  }
+  input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #009cea;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+  }
+  .accordionsection {
+    border: 2px solid #eee;
+    margin-top: 30%;
+  }
+  
+  @media screen and (max-width:1023px) {
+    .accordionsection {
+      margin-top: 10%;
+      border: 0px;
+    }
+    .callsection{
+            display: none;
+    }
+  }
+  
